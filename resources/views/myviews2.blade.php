@@ -1,23 +1,54 @@
-<!-- @extends('Template.default')
-@section('content')
+@extends('Template.default')
+
+{{-- @section('content')
+
+
+    <?php
+        $name = "deecubpee";
+        $array = [10, 20, 30, 40, 50];
+    ?>
+
+    <h1>Hello from PHP</h1>
+    <h1>{{ "hello world" }}</h1>
+    <h1>{{ $name }}</h1>
+    <?php
+         var_dump($array);
+         print_r($array);
+         echo "<br/>";
+
+         foreach ($array as $value) {
+            echo $value . "<br/>";
+         }
+    ?>
+
+
     <h1>ดีครับ</h1>
-    <input type="text" id="myinput" value="input text value"/>
-    <button onclick="myfunc()" on>ตรวจสอบ</button></button>
-@endsection
+
+    <input
+        type="text"
+        id="myinput"
+        value="input text value"
+    />
+
+    <button onclick="myfunc()">ตรวจสอบ</button>
+
+@endsection --}}
+
 
 @push('scripts')
-    <h1>ดีครับ</h1>
- @endpush
+   <script>
+(() => {
+    const form = document.querySelector('.needs-validation');
+    form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    });
+})();
+</script>
 
- @push('scripts')
-    <h1>ดีครับ2</h1>
- @endpush
 
-@push('scripts')
-    <script>
-     function myfunc(){
-         
-    }
-        consoloe.log(document.getElementById('myinput').value);
-    </script>
-@endpush -->
+
+@endpush

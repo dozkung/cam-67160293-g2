@@ -34,13 +34,12 @@
     }
 
     h1 {
-        font-family: "Sofia";
+        font-family: "";
         text-align: center;
         color: #000102ff;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
     }
-</style> 
-    
+</style>
 </head>
 <body class="bg-gradient">
     <div class="form">
@@ -76,7 +75,7 @@
                 </div>
             </div>
 
- 
+
             <div class="row mb-3">
                 <label class="col-sm-2 col-form-label">เพศ</label>
                 <div class="col-sm-6">
@@ -85,7 +84,7 @@
                 </div>
             </div>
 
-       
+
             <div class="row mb-3">
                 <label for="picture" class="col-sm-2 col-form-label">รูป</label>
                 <div class="col-sm-6">
@@ -93,7 +92,7 @@
                 </div>
             </div>
 
-       
+
             <div class="row mb-3">
                 <label for="index" class="col-sm-2 col-form-label">ที่อยู่</label>
                 <div class="col-sm-10">
@@ -101,7 +100,7 @@
                 </div>
             </div>
 
-          
+
             <div class="row mb-3">
                 <label for="color" class="col-sm-2 col-form-label">สีที่ชอบ</label>
                 <div class="col-sm-4">
@@ -118,12 +117,12 @@
                         <option value="น้ำตาล">
                         <option value="เทา">
                         <option value="ดำ">
-                    
+
                     </datalist>
                 </div>
             </div>
 
-        
+
             <div class="row mb-3">
                 <label class="col-sm-2 col-form-label">เพลงที่ชอบ</label>
                 <div class="col-sm-8">
@@ -133,7 +132,7 @@
                 </div>
             </div>
 
-    
+
             <div class="row mb-3">
                 <label class="col-sm-2"></label>
                 <div class="col-sm-8">
@@ -141,7 +140,7 @@
                 </div>
             </div>
 
-        
+
             <div class="text-center mt-4">
                 <button type="reset" class="btn btn-secondary">Reset</button>
                 <button type="submit" class="btn btn-success ms-3">Submit</button>
