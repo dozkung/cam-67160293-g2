@@ -23,13 +23,16 @@ Route::get('/mycontroller', [App\Http\Controllers\Mycontroller::class, 'index'])
 Route::post('/mycontroller', [App\Http\Controllers\Mycontroller::class, 'process']);
 
 
+// pokedex
+Route::resource('/pokedexes', App\Http\Controllers\PokedexesController::class);
+
+
+
 
 Route::get('/', function () {
     return view('template.default');
 });
 Route::post('/form-result', [FormController::class, 'result']) ->name('form.result');
-
-
 
 Route::namespace('App\Http\Controllers')->group(function () {
     Route::get('/flight', 'FilghtController@index');
